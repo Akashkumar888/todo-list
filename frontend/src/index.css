@@ -1,0 +1,73 @@
+
+body {
+  font-family: system-ui;
+  background: #f5f5f5;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+}
+
+.input-box {
+  display: flex;
+  gap: 5px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.done span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+
+/* ADD button styling */
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #999;
+  background: #f5f5f5;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Add button hover (green) */
+.input-box button:hover {
+  background-color: #2ecc71;
+  color: white;
+  border-color: #27ae60;
+}
+
+/* Delete button styling */
+li button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+}
+
+/* Delete button hover (dark red) */
+li button:hover {
+  background-color: #d93636;
+}
