@@ -4,19 +4,13 @@
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "npm run":"npm run dev",
-    "npm nodemon":"npx nodemon server.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "http": "^0.0.1-security",
-    "jsonwebtoken": "^9.0.3",
     "mongoose": "^8.22.1"
   }
 }
