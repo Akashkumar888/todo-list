@@ -1,13 +1,8 @@
 import express from "express";
-import cors from "cors";
 import taskRouter from "./routes/task.route.js";
 
 const app = express();
 
-app.use(cors({
-  origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE"],
-}));
 
 app.use(express.json());
 
