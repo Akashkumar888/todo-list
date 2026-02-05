@@ -6,8 +6,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173", // ✅ frontend URL
-    credentials: true,               // ✅ allow cookies / auth headers
+    origin: [
+      "https://todo-list-2rgz.vercel.app",
+      "https://todo-list-phi-five-15.vercel.app"
+    ],
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
